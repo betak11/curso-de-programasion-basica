@@ -131,3 +131,4 @@ function agregarLetra()
 	alert(hombre.vivo)
 
 }
+alert("hola como estas")
