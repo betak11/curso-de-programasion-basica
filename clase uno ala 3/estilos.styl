@@ -1,0 +1,33 @@
+mobile-cutoff         ?= 600px
+desktop-cutoff        ?= 1050px
+enable-em-breakpoints ?= false
+base-font-size        ?= 16px
+
+.ex
+    color red
++below(1000px)
+    .ex
+        background red
+.lol
+    @extends .ex
+
+
+
++between(1000px, 1500px)
+    .leo 
+        background red
+
++mobile()
+    .leo
+        color blue
++tablet()
+    .tablet
+        color red
+
++retina()
+    .luz 
+        color white
+
++at(4)
+    .luz 
+        color white

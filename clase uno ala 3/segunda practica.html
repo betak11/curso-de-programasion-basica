@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf"/>
+	<title>practica</title>
+		<script>
+		function patito(minimo,maximo){
+			var numero= Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
+			return numero;
+		}
+		var opciones = ["pieadra","papel","tijeras"]
+		var opcionDelaMaquina=patito(0,3);
+		var eleccionDelUsuario;
+		eleccionDelUsuario = prompt("escoje una opcion 1: piedra 2: papel 3: tijeras");
+							alert("as escojido "+opciones[eleccionDelUsuario]);
+							alert("roberto escojio "+opciones[opcionDelaMaquina]);
+
+						if(eleccionDelUsuario==1){
+
+							if(opcionDelaMaquina==1){
+								alert("enpate");
+							}
+							else if(opcionDelaMaquina==2){
+								alert("perdistes");
+							}
+							else if(opcionDelaMaquina==3){
+								alert("ganastes");
+							}
+						}
+						else if(eleccionDelUsuario==2){
+
+						if(opcionDelaMaquina==1){
+								alert("ganastes");
+							}
+							else if(opcionDelaMaquina==2){
+								alert("enpate");
+							}
+							else if(opcionDelaMaquina==3){
+								alert("perdistes");
+							}
+							else if(eleccionDelUsuario==3){
+
+								if(opcionDelaMaquina==1){
+								alert("perdistes");
+							}
+							else if(opcionDelaMaquina==2){
+								alert("ganastes");
+							}
+							else if(opcionDelaMaquina==3){
+								alert("enpate");
+							}
+							
+							}
+
+						}
+		</script>
+</head>
+<body>
+</body>
+</html>
